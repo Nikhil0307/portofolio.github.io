@@ -1,0 +1,101 @@
+body {
+  background-color: #f7f3ff;
+  color: slateblue;
+}
+
+h1 {
+  text-align: center;
+  font-family: serif;
+}
+
+.type-animation {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 0;
+  overflow: hidden;
+  padding-right: 0.08em;
+  position: relative;
+}
+
+.type-animation:after {
+  content: "";
+  background: #f7f3ff;
+  position: absolute;
+  right: 0;
+  top: -0.05em;
+  bottom: -0.05em;
+  width: 0.08em;
+  border-right: 2px solid transparent;
+}
+
+.type-animation.animating {
+  -webkit-animation: type 1440ms;
+          animation: type 1440ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.type-animation.animating:after {
+  -webkit-animation: cursor 320ms 8.0625 ease-in-out;
+          animation: cursor 320ms 8.0625 ease-in-out;
+}
+
+@-webkit-keyframes type {
+  12.5 {
+    width: 0.5em;
+  }
+  25 {
+    width: 1em;
+  }
+  37.5 {
+    width: 1.5em;
+  }
+  50 {
+    width: 2em;
+  }
+  62.5 {
+    width: 2.5em;
+  }
+  75 {
+    width: 3em;
+  }
+  87.5 {
+    width: 3.5em;
+  }
+  100% {
+    width: 3.5em;
+    padding-right: 0;
+  }
+}
+
+@keyframes type {
+  12.5 {
+    width: 0.5em;
+  }
+  25 {
+    width: 1em;
+  }
+  37.5 {
+    width: 1.5em;
+  }
+  50 {
+    width: 2em;
+  }
+  62.5 {
+    width: 2.5em;
+  }
+  75 {
+    width: 3em;
+  }
+  87.5 {
+    width: 3.5em;
+  }
+  100% {
+    width: 3.5em;
+    padding-right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
